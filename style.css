@@ -33,3 +33,7 @@ body {
 .ui-message {
   font-size: 2rem;
 }
+
+.level-two {
+  display: none;
+}
