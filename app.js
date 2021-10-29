@@ -5,6 +5,8 @@ const levelOne = document.querySelector('.level-one'),
 // UI Messages
 const uiLevel = document.querySelector('.ui-level'),
   uiMessage = document.querySelector('.ui-message');
+// End Game
+const spookyPic = document.querySelector('.spooky-pic');
 
 const collisionCheck = (value) => {
   if (value === 'maze-border') alert('You lost the game...try again.');
@@ -12,6 +14,10 @@ const collisionCheck = (value) => {
     nextButton.style.opacity = 1;
     nextButton.style.pointerEvents = 'all';
     levelOne.style.pointerEvents = 'none';
+  }
+  if (value === 'end-game') {
+    spookyPic.style.display = 'block';
+    document.body.style.background = 'black';
   }
 };
 
